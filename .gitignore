@@ -1,0 +1,8 @@
+coverage.xml
+psr2.sh
+.idea
+coverage
+vendor
+composer.lock
+
+tests/resources/google-credentials.json

@@ -1,0 +1,38 @@
+{
+    "name": "oitimon/csm-google-cloud",
+    "authors": [
+        {
+            "name": "Oleksandr Ieremeev",
+            "email": "yeremeyev.alexander@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Csm\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Csm\\Tests\\": "tests/",
+            "Csm\\Examples\\": "examples/"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "google/cloud": "v0.20.0",
+        "oitimon/csm": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.6",
+        "squizlabs/php_codesniffer": "^2.7"
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url":  "https://github.com/oitimon/csm"
+    },{
+        "type": "composer",
+        "url": "https://packagist.org"
+    },{
+        "packagist": false
+    }]
+}

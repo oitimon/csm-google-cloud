@@ -1,0 +1,30 @@
+filter:
+    paths:
+        - src/*
+before_commands:
+    - 'composer install'
+checks:
+    php:
+        code_rating: true
+        duplication: true
+build:
+    environment:
+        php:
+            version: 5.6
+tools:
+    external_code_coverage: false
+    php_mess_detector: true
+    php_code_sniffer: true
+    sensiolabs_security_checker: true
+    php_code_coverage: true
+    php_pdepend: true
+    php_loc:
+        enabled: true
+        excluded_dirs:
+            - tests
+            - vendor
+    php_cpd:
+        enabled: true
+        excluded_dirs:
+            - tests
+            - vendor
