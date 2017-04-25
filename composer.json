@@ -19,7 +19,7 @@
     },
     "require": {
         "php": ">=5.6",
-        "google/cloud": "v0.20.0",
+        "google/cloud": "dev-master",
         "oitimon/csm": "dev-master"
     },
     "require-dev": {

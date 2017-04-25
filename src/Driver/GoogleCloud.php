@@ -3,6 +3,7 @@
 namespace Csm\Driver;
 
 use Csm\Contracts\Driver;
+use Csm\CsmException;
 use Csm\CsmIdent;
 use Csm\Driver\GoogleCloud\Helper;
 use Csm\Driver\GoogleCloud\System;

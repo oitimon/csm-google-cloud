@@ -2,11 +2,11 @@
 
 namespace Csm\Driver\GoogleCloud;
 
-use Google\Cloud\RestTrait;
+use Google\Cloud\Core\RestTrait;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Request;
-use Google\Cloud\Upload\AbstractUploader;
-use Google\Cloud\Upload\MultipartUploader;
+use Google\Cloud\Core\Upload\AbstractUploader;
+use Google\Cloud\Core\Upload\MultipartUploader;
 
 /**
  * @author Oleksandr Ieremeev

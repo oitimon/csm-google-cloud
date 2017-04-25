@@ -2,23 +2,18 @@
 
 namespace Csm\Driver\GoogleCloud;
 
-use Google\Cloud\Exception\GoogleException;
-use GuzzleHttp\Psr7;
+use Google\Cloud\Core\Exception\GoogleException;
 use GuzzleHttp\Psr7\LimitStream;
 use GuzzleHttp\Psr7\Request;
-use Google\Cloud\RequestWrapper;
+use Google\Cloud\Core\RequestWrapper;
+use Psr\Http\Message\StreamInterface;
 
 /**
  * @author Oleksandr Ieremeev
  * @package Csm
  */
-class ResumableUploader extends \Google\Cloud\Upload\ResumableUploader
+class ResumableUploader extends \Google\Cloud\Core\Upload\ResumableUploader
 {
-    /**
-     * @var int
-     */
-    private $rangeStart = 0;
-
     /**
      * @var string
      */

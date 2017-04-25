@@ -4,7 +4,7 @@ namespace Csm\Driver\GoogleCloud;
 
 use Csm\Containers\ChainElement;
 use Csm\CsmException;
-use Google\Cloud\Exception\GoogleException;
+use Google\Cloud\Core\Exception\GoogleException;
 use Google\Cloud\Storage\Bucket;
 
 /**
@@ -99,7 +99,6 @@ trait System
     }
 
     /**
-     * @param mixed $chunkSize
      * @return int
      */
     protected function getChunkSize()
@@ -126,7 +125,7 @@ trait System
      *
      * @param string $path
      * @param string $name
-     * @return string | boolen
+     * @return string | bool
      */
     protected function readFile($path, $name)
     {
